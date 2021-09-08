@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         int num = (int)(Math.random() * 100 + 1);
         Scanner uInput = new Scanner(System.in);
-        System.out.println(num);
+        //System.out.println(num);
         int numGuesses = 0;
 
         for(numGuesses = 5; numGuesses > 0; numGuesses--){
@@ -16,7 +16,7 @@ public class Main {
             if(!(num - 10 <= uGuess && uGuess <= num + 10)) {
                 System.out.println("Not close enough");
             }
-            else if(uGuess == num){
+            else{
                 System.out.println("The correct number was " + num);
                 break;
             }
